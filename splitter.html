@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnWeb3 First dApp</title>
+  </head>
+ 
+  <body>
+  <!-- We will add more code here -->
+    <p id="moods"></p>
+  </body>
+  <script>
+    document.getElementById("moods").innerHTML= splitAtX("capappxcode");
+
+    function splitAtX(string) {
+      xIndex = string.indexOf('x'); //index of x 
+      strB4x = string.slice(0,xIndex); // the strings before x
+    
+      xDown = string.slice(xIndex,); // the strings including x and downwards
+      strAfterX = xDown.slice(1,); // the strings downwards after x
+
+      if(strB4x.length > strAfterX.length){
+        return strB4x;
+      }
+      else{
+        return strAfterX;
+      }
+    }
+  
+  </script>
+</html>
+
